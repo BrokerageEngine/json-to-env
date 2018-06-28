@@ -1,22 +1,20 @@
-# json-to-env [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# json-to-env
 > Convert json to key-value environment pairs
 
+Note, this is my own fork to match our `.env` file formats. Find the original at [ralucas/json-to-env](https://github.com/ralucas/json-to-env).
 
 ## Install
 
 ```sh
 $ npm install --save json-to-env
 ```
-or
-```sh
-$ npm install -g json-to-env
-```
-
 
 ## Usage
 
+Or run it from this directory:
+
 ```sh
-$ json-to-env <inputfile.json> <outputfile.config> <options>
+$ node index.js <inputfile.json> <outputfile.config> <options>
 ```
 
 ## How it works
@@ -36,20 +34,12 @@ input example:
 
 output:
 ```
-export TEST1="a test"
-export TEST_THE_TEST="another test"
-export NESTED_TEST3="hello"
-export NESTED_A_NEW_ONE="goodbye"
+TEST1=a test
+TEST_THE_TEST=another test
+NESTED_TEST3=hello
+NESTED_A_NEW_ONE=goodbye
 ```
 
 ## License
 
 Unlicense © [R.A. Lucas](ralucas.github.io)
-
-
-[npm-image]: https://badge.fury.io/js/json-to-env.svg
-[npm-url]: https://npmjs.org/package/json-to-env
-[travis-image]: https://travis-ci.org/ralucas/json-to-env.svg?branch=master
-[travis-url]: https://travis-ci.org/ralucas/json-to-env
-[daviddm-image]: https://david-dm.org/ralucas/json-to-env.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ralucas/json-to-env
