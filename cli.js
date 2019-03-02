@@ -127,7 +127,7 @@ if (config.verbose) {
   process.stdout.write('Running verbose mode\nStarting...\n');
 }
 
-module.exports = jsonToEnv(config);
+module.exports = jsonToEnv.create(config);
 
 
 
